@@ -43,6 +43,9 @@
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="kuhni_jam" />
 
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -54,12 +57,12 @@
 		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
     </noscript>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="js-header">
 			<div class="container">
 				<div class="header__wrap">
 					<div class="header__left">
 						<a href="../main.html" class="header__logo">
-							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/vp/ae6a47cdbdd84403439ce72d55a34888/5E3A324B/t51.2885-19/s150x150/71502248_579525106122998_8484404943434809344_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com" alt="КУХНИ ДЖЕМ"></div>
+							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/vp/e52be8df75b29cbdc1b1890ae96b2bd1/5E61BF4B/t51.2885-19/s150x150/71502248_579525106122998_8484404943434809344_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com" alt="КУХНИ ДЖЕМ"></div>
 							<div class="header__logo-txt">kuhni_jam</div>
 						</a>
 						<div class="header__title">КУХНИ ДЖЕМ</div>
@@ -68,81 +71,87 @@
 			</div>
 		</header>	
 		<div class="main">
-			<div class="stories" style="display: none;">
+			<div class="stories">
 				<div class="container">
-					<div class="stories__slider" id="js-stories-slider">
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухниклассик">
-								<a href="../tags/./kukhniklassik.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhniklassik.png" alt="кухниклассик" /></div>
-									<div class="stories__slide-txt">кухниклассик</div>
-								</a>
+					<div class="stories__slider-wrap">
+						<div class="stories__slider" id="js-stories-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухниклассик">
+										<a href="../tags/./kukhniklassik.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhniklassik.png);"></div>
+											<div class="stories__slide-txt">кухниклассик</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="стильная">
+										<a href="../tags/./stil-naya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/stil-naya.png);"></div>
+											<div class="stories__slide-txt">стильная</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухнина заказ симферополь">
+										<a href="../tags/./kukhnina-zakaz-simferopol-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhnina-zakaz-simferopol-.png);"></div>
+											<div class="stories__slide-txt">кухнина заказ симферополь</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="фасады симферополь">
+										<a href="../tags/./fasady-simferopol-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/fasady-simferopol-.png);"></div>
+											<div class="stories__slide-txt">фасады симферополь</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайнкухни">
+										<a href="../tags/./dizaynkukhni.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizaynkukhni.png);"></div>
+											<div class="stories__slide-txt">дизайнкухни</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайнсимферополь">
+										<a href="../tags/./dizaynsimferopol-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizaynsimferopol-.png);"></div>
+											<div class="stories__slide-txt">дизайнсимферополь</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебельна заказ симферополь">
+										<a href="../tags/./mebel-na-zakaz-simferopol-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel-na-zakaz-simferopol-.png);"></div>
+											<div class="stories__slide-txt">мебельна заказ симферополь</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="современная кухняна заказ симферополь">
+										<a href="../tags/./sovremennaya-kukhnyana-zakaz-simferopol-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/sovremennaya-kukhnyana-zakaz-simferopol-.png);"></div>
+											<div class="stories__slide-txt">современная кухняна заказ симферополь</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухнина заказкрым">
+										<a href="../tags/./kukhnina-zakazkrym.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhnina-zakazkrym.png);"></div>
+											<div class="stories__slide-txt">кухнина заказкрым</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="стильная">
-								<a href="../tags/./stil-naya.html">
-									<div class="stories__slide-pic"><img src="../img/og/stil-naya.png" alt="стильная" /></div>
-									<div class="stories__slide-txt">стильная</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухнина заказ симферополь">
-								<a href="../tags/./kukhnina-zakaz-simferopol-.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhnina-zakaz-simferopol-.png" alt="кухнина заказ симферополь" /></div>
-									<div class="stories__slide-txt">кухнина заказ симферополь</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="фасады симферополь">
-								<a href="../tags/./fasady-simferopol-.html">
-									<div class="stories__slide-pic"><img src="../img/og/fasady-simferopol-.png" alt="фасады симферополь" /></div>
-									<div class="stories__slide-txt">фасады симферополь</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайнкухни">
-								<a href="../tags/./dizaynkukhni.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizaynkukhni.png" alt="дизайнкухни" /></div>
-									<div class="stories__slide-txt">дизайнкухни</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайнсимферополь">
-								<a href="../tags/./dizaynsimferopol-.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizaynsimferopol-.png" alt="дизайнсимферополь" /></div>
-									<div class="stories__slide-txt">дизайнсимферополь</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебельна заказ симферополь">
-								<a href="../tags/./mebel-na-zakaz-simferopol-.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel-na-zakaz-simferopol-.png" alt="мебельна заказ симферополь" /></div>
-									<div class="stories__slide-txt">мебельна заказ симферополь</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="современная кухняна заказ симферополь">
-								<a href="../tags/./sovremennaya-kukhnyana-zakaz-simferopol-.html">
-									<div class="stories__slide-pic"><img src="../img/og/sovremennaya-kukhnyana-zakaz-simferopol-.png" alt="современная кухняна заказ симферополь" /></div>
-									<div class="stories__slide-txt">современная кухняна заказ симферополь</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухнина заказкрым">
-								<a href="../tags/./kukhnina-zakazkrym.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhnina-zakazkrym.png" alt="кухнина заказкрым" /></div>
-									<div class="stories__slide-txt">кухнина заказкрым</div>
-								</a>
-							</div>
-						</div>
+						<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+						<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
 					</div>
 				</div>
 			</div>
@@ -173,9 +182,7 @@
 							</div>
 						<div>
 							<a href="https://www.instagram.com/p/BxhbszWoTbt/" 
-								target="_blank" class="links-page-list__item-link">
-								<strong>Комментировать</strong>
-								<span>Instagram</span>
+								target="_blank" class="links-page-btn shake"><strong>Комментировать</strong>&nbsp;<span>Instagram</span>
 							</a>
 						</div>
 
@@ -279,7 +286,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>3</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/1f2a812d6654cdf7cbba77be0690f21b/5E1B7656/t51.2885-15/e35/65203779_146730089722882_7526559975962969340_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt="Кухонные гарнитуры из массива ясеня всегда актуальны и оправдывают вложенные в них средства.">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/df09f06895e4c618ef2ff126381ab84b/5E430356/t51.2885-15/e35/65203779_146730089722882_7526559975962969340_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt="Кухонные гарнитуры из массива ясеня всегда актуальны и оправдывают вложенные в них средства.">
 								</div>
 								<div class="article-more__item-name">Кухонные гарнитуры из массива ясеня всегда актуальны и оправдывают вложенные в них средства.</div>
 							</a>
@@ -297,7 +304,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>5</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/e532f3163e32091c3496af428dbefac0/5E377633/t51.2885-15/e35/69513447_683058248842985_3213640428921039240_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt="Кухня является визитной карточкой любой семьи независимо от ее метража и количества домочадцев.">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/40d9501e0021b66abf88084653de7ad2/5E5F0333/t51.2885-15/e35/69513447_683058248842985_3213640428921039240_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt="Кухня является визитной карточкой любой семьи независимо от ее метража и количества домочадцев.">
 								</div>
 								<div class="article-more__item-name">Кухня является визитной карточкой любой семьи независимо от ее метража и количества домочадцев.</div>
 							</a>
@@ -342,11 +349,12 @@
 			</div>
 		</div>		
 	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="../js/vendors/jquery.min.js"></script>
-	<script src="../js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="../js/vendors/slick.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
 	<!--init-->
 	<script src="../js/jquery.init.js"></script>
 	<!--my scripts-->
