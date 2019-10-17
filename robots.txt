@@ -1,2 +1,2 @@
 ﻿User-agent: *
-Sitemap: http://kuhni-jam.itsinsta.site/sitemap.xml
+Sitemap: https://kuhni-jam.itsinsta.site/sitemap.xml
