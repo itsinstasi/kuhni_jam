@@ -95,18 +95,18 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="stories__slide" title="фасады симферополь">
-									<a href="./tags/./fasady-simferopol-.html">
-										<div class="stories__slide-pic" style="background-image: url(./img/og/fasady-simferopol-.png);"></div>
-										<div class="stories__slide-txt" style="">фасады симферополь</div>
-									</a>
-								</div>
-							</div>
-							<div class="swiper-slide">
 								<div class="stories__slide" title="кухнина заказ симферополь">
 									<a href="./tags/./kukhnina-zakaz-simferopol-.html">
 										<div class="stories__slide-pic" style="background-image: url(./img/og/kukhnina-zakaz-simferopol-.png);"></div>
 										<div class="stories__slide-txt" style="">кухнина заказ симферополь</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="stories__slide" title="фасады симферополь">
+									<a href="./tags/./fasady-simferopol-.html">
+										<div class="stories__slide-pic" style="background-image: url(./img/og/fasady-simferopol-.png);"></div>
+										<div class="stories__slide-txt" style="">фасады симферополь</div>
 									</a>
 								</div>
 							</div>
@@ -303,6 +303,17 @@ $(document).ready(function(){
                 contentType: 'application/json',
 		data : form_data
 	}).done(function(response){
+	    var email = response.email;
+		if (email) {
+	        $("#leadSent").text("Ваш запрос отправлен на " + email);
+		} else {
+	        $("#leadSent").text("Ваш запрос отправлен");
+		}
+
+		var input = form.find('input');
+		input.attr('readonly', true);
+        input.attr("disabled", true);
+		form.find('button').attr("disabled", true);
 	}).fail(function(){
 	});
 
